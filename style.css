@@ -1,4 +1,13 @@
-*{
+/* 
+    colors:
+    yellow: #ffbe00
+
+*/
+
+
+
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,13 +15,20 @@
 
 /* TEMPORARY STYLES FOR STRUCTURAL HTML */
 
-*{
+section {
     padding: 0.5rem;
     border: 2px solid rgb(225,225,225);
 }
 
+
+body{
+    border: none;
+    font-family: 'Catamaran, sans-serif';
+    color: #192b37;
+}
+
 /* IMAGE STYLES */
-.bg-image{
+.bg-image {
     background-image: url('/images/white-sheets.jpg');
     background-size: cover;
     min-height: 10rem;
@@ -20,10 +36,58 @@
 
 /* UNIVERSAL STYLES & UTILITY CLASSES*/
 
-.padded { padding: 5%;}
+.padded    { padding: 5%;}
 .padded-sm { padding: 1rem;}
 
 .bg-dark {
     background-color: #192b37;
     color: white;
+}
+
+
+.tall-80    { min-height: 80vh;}
+.tall-90    { min-height: 90vh;}
+.tall-100   { min-height: 100vh;}
+
+
+/* TYPOGRAPHY STYLES */
+
+h2{
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+p{
+    font-weight: 200;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p:last-child{
+    margin-bottom: 0;
+}
+
+.featured-text{ color: #ffbe00;}
+
+.font-weight-light{ font-weight: 200;}
+.font-weight-normal{ font-weight: normal;}
+.font-weight-extra-bold{ font-weight: 800;}
+
+.text-left   { text-align: left;}
+.text-center { text-align: center;}
+.text-right  { text-align: right;}
+
+
+/* HEADER STYLES */
+
+header{
+    background-image: url('/images/white-sheets.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header h3{
+    font-size: 5.5rem;
+    line-height: 1;
 }
